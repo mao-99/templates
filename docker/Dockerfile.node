@@ -1,0 +1,11 @@
+FROM node
+
+WORKDIR /the/workdir/path
+
+COPY source dest
+
+RUN npm install
+
+EXPOSE 80
+
+CMD [ "node", "server.js" ]
